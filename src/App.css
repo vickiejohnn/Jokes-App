@@ -7,31 +7,31 @@ h1 {
   font-size: 3rem;
 }
 .jokes-box {
-  display: block;
   width: 45rem;
   height: 35rem;
   text-align: center;
   align-items: center;
   justify-content: center;
   margin: auto;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding: 1.5rem;
+  padding-top: 2.5rem;
   backdrop-filter: blur(50px);
   border-radius: 1.5rem;
-}
-.jokes-box p.category {
-  color: #E1290F;
-  text-shadow: none;
-  font-weight: bold;
-  font-size: 3rem;
+  word-wrap: break-word;
 }
 .jokes-box p {
-  font-size: 2.5rem;
-  color: #fff;
-  text-shadow: 2px 1px #000;
+  font-size: 2rem;
+  color: #000;
+  font-weight: bold
+}
+.jokes-box p.emoji {
+  font-size: 2rem;
+}
+.jokes-box img.emoji-image {
+  width: 20%;
 }
 button {
-  margin-top: 4rem;
+  margin-top: 5rem;
   width: 10rem;
   height: 3rem;
   background: #E1290F;
@@ -41,6 +41,7 @@ button {
   font-size: 1.5rem;
   cursor: pointer;
   transition: all .3s ease;
+  outline: none;
 }
 button:hover {
   background: #fff;
@@ -61,24 +62,22 @@ button:hover {
   }
   .jokes-box {
     display: block;
-    width: 25rem;
-    height: 30rem;
+    width: 28rem;
+    height: 35rem;
     padding: .5rem;
   }
   .jokes-box p.category {
-    color: #E1290F;
-    text-shadow: none;
     font-weight: bold;
     font-size: 3rem;
   }
   .jokes-box p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #000;
     text-shadow: none;
     font-weight: bold;
   }
   button {
-    margin-top: 3rem;
+    margin-top: 5rem;
     width: 10rem;
     height: 3rem;
     background: #E1290F;
@@ -86,10 +85,9 @@ button:hover {
     border: none;
     border-radius: .5rem;
     font-size: 1.5rem;
-    transition: all .3s ease;
   }
   button:hover {
-    background: #fff;
-    color: #E1290F;
+    background: #E1290F;
+    color: #FACC03;
   }
 }

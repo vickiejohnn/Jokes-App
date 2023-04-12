@@ -1,11 +1,16 @@
 import axios from 'axios'
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 
 const Hook = () => {
-    const endpoint = 'https://v2.jokeapi.dev/joke/Any?type=single'
+    useEffect(()=> {
+        getJokes()
+    }, [])
+
+    const endpoint = 'https://icanhazdadjoke.com/slack'
+    const endpoint2 = 'https://v2.jokeapi.dev/joke/Any?type=single'
     const [response, setResponse] = useState([])
     const getJokes = ()=> {
-    axios.get(endpoint)
+    axios.get(endpoint2)
     .then((result)=> {
         console.log(result.data);
         setResponse(result.data);
@@ -14,7 +19,9 @@ const Hook = () => {
     .catch((err)=> {
         console.log(err);
     })
+
 }
+
 
   return (
     <>
@@ -24,8 +31,8 @@ const Hook = () => {
             <>
                 <div className='loading'></div>
                 <div className='jokes-box'>
-                    <p className='category'>{response.category}</p>
                     <p>{response.joke}</p>
+                    <img src="https://media.tenor.com/lOO2pHtjwf0AAAAi/smile-laugh.gif" alt="" className="emoji-image" />
                 </div>
             </>
         }

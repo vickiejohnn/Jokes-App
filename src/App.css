@@ -1,0 +1,136 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+body{
+  background: url('https://img.freepik.com/free-photo/3d-rendering-emotions_23-2149081949.jpg?size=626&ext=jpg&ga=GA1.1.804562735.1680008345&semt=sph');
+  text-align: center;
+}
+h1 {
+  color: #E1290F;
+  font-size: 3rem;
+}
+.jokes-box {
+  display: block;
+  width: 45rem;
+  height: 30rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+  backdrop-filter: blur(50px);
+  border-radius: 1.5rem;
+}
+.jokes-box p.category {
+  color: #E1290F;
+  text-shadow: none;
+  font-weight: bold;
+  font-size: 3rem;
+}
+.jokes-box p {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 1px #000;
+}
+button {
+  margin-top: 3rem;
+  width: 10rem;
+  height: 3rem;
+  background: #E1290F;
+  color: #FACC03;
+  border: none;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  transition: all .3s ease;
+}
+button:hover {
+  background: #fff;
+  color: #E1290F;
+}
+
+@media (max-width: 688px) {
+  body{
+    background: url('https://img.freepik.com/free-photo/3d-rendering-emotions_23-2149081949.jpg?size=626&ext=jpg&ga=GA1.1.804562735.1680008345&semt=sph');
+    background-size: contain;
+    text-align: center;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  h1 {
+    color: #E1290F;
+    font-size: 2.5rem;
+  }
+  .jokes-box {
+    display: block;
+    width: 25rem;
+    height: 30rem;
+    padding: .5rem;
+  }
+  .jokes-box p.category {
+    color: #E1290F;
+    text-shadow: none;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .jokes-box p {
+    font-size: 2rem;
+    color: #000;
+    text-shadow: none;
+    font-weight: bold;
+  }
+  button {
+    margin-top: 3rem;
+    width: 10rem;
+    height: 3rem;
+    background: #E1290F;
+    color: #FACC03;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    transition: all .3s ease;
+  }
+  button:hover {
+    background: #fff;
+    color: #E1290F;
+  }
+}
